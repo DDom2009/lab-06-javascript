@@ -1,0 +1,56 @@
+
+
+
+
+
+
+       <html >
+
+         <head>
+
+          <title>Gas Mileage</title>
+
+           <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+
+
+          <script type = "text/javascript">
+            function calcMPG() {
+              console.log('CALLING CALC');
+              var miles = document.getElementById('miles').value;
+              var gallons = document.getElementById('gallons').value;
+
+              var mpg = miles / gallons;
+              document.getElementById('milesPerGallon').innerText = mpg;
+            }
+           </script>
+     </head>
+
+
+
+     <body>
+
+
+
+
+
+
+          <p> Miles driven</p>
+          <input id="miles" type="number" name="Milesdriven" value="0" /><br />
+
+           <p>Gallons Used</p>
+
+          <input id="gallons" type="number" name="gallons used" value="0"/><br />
+          <p>Miles Per Gallon</p>
+
+          <div id="milesPerGallon"></div>
+          <br />
+          <br />
+          <button type="submit" onclick="calcMPG()">calculate</button>
+
+
+       </body>
+
+
+
+       </html>
